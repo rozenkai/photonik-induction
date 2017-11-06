@@ -1,0 +1,644 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  AdvancedRocketryPlugin (AdvancedRocketry-1.12.2-1.2.5a.jar)
+  Do not report to Forge! Remove FoamFixAPI (or replace with FoamFixAPI-Lawful) and try again. (FoamFixUnofficial-1.12-0.8.1-Anarchy.jar)
+  Inventory Tweaks Coremod (InventoryTweaks-1.63.jar)
+  MalisisCorePlugin (malisiscore-1.12.2-6.1.7.jar)
+  LoadingPlugin (Bloodmoon-MC1.12.2-1.5.2.jar)
+  IELoadingPlugin (ImmersiveEngineering-0.12-74-core.jar)
+  HammerCoreCore (HammerCore-1.12.2-1.9.5.2.jar)
+  LoadingPlugin (ResourceLoader-MC1.12.1-1.5.3.jar)
+  SFRCore (SolarFluxReborn_1.12.2-3.42r.jar)
+  LoadingPlugin (RandomThings-MC1.12.2-4.0.8.jar)
+  CTMCorePlugin (CTM-MC1.12-0.2.3.9.jar)
+  AstralCore (astralsorcery-1.12.2-1.7.2.jar)
+Contact their authors BEFORE contacting forge
+
+// I'm sorry, Dave.
+
+Time: 11/3/17 7:28 PM
+Description: Watching Server
+
+java.lang.Error
+	at net.minecraftforge.event.ForgeEventFactory.gatherCapabilities(ForgeEventFactory.java:598)
+	at net.minecraft.world.World.initCapabilities(World.java:3952)
+	at net.minecraft.world.WorldServerMulti.func_175643_b(WorldServerMulti.java:79)
+	at net.minecraftforge.common.DimensionManager.initDimension(DimensionManager.java:244)
+	at net.minecraft.server.MinecraftServer.func_71218_a(MinecraftServer.java:830)
+	at hellfirepvp.astralsorcery.common.base.CelestialGatewaySystem.onServerStart(CelestialGatewaySystem.java:56)
+	at hellfirepvp.astralsorcery.AstralSorcery.onServerStarted(AstralSorcery.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:606)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:253)
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:231)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:148)
+	at net.minecraftforge.fml.common.Loader.serverStarted(Loader.java:782)
+	at net.minecraftforge.fml.common.FMLCommonHandler.handleServerStarted(FMLCommonHandler.java:300)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server Watchdog
+Stacktrace:
+	at net.minecraftforge.event.ForgeEventFactory.gatherCapabilities(ForgeEventFactory.java:598)
+	at net.minecraft.world.World.initCapabilities(World.java:3952)
+	at net.minecraft.world.WorldServerMulti.func_175643_b(WorldServerMulti.java:79)
+	at net.minecraftforge.common.DimensionManager.initDimension(DimensionManager.java:244)
+	at net.minecraft.server.MinecraftServer.func_71218_a(MinecraftServer.java:830)
+	at hellfirepvp.astralsorcery.common.base.CelestialGatewaySystem.onServerStart(CelestialGatewaySystem.java:56)
+	at hellfirepvp.astralsorcery.AstralSorcery.onServerStarted(AstralSorcery.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraftforge.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:606)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.sendEventToModContainer(LoadController.java:253)
+	at net.minecraftforge.fml.common.LoadController.propogateStateMessage(LoadController.java:231)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.Subscriber.invokeSubscriberMethod(Subscriber.java:91)
+	at com.google.common.eventbus.Subscriber$SynchronizedSubscriber.invokeSubscriberMethod(Subscriber.java:150)
+	at com.google.common.eventbus.Subscriber$1.run(Subscriber.java:76)
+	at com.google.common.util.concurrent.MoreExecutors$DirectExecutor.execute(MoreExecutors.java:399)
+	at com.google.common.eventbus.Subscriber.dispatchEvent(Subscriber.java:71)
+	at com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher.dispatch(Dispatcher.java:116)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:217)
+	at net.minecraftforge.fml.common.LoadController.distributeStateMessage(LoadController.java:148)
+	at net.minecraftforge.fml.common.Loader.serverStarted(Loader.java:782)
+	at net.minecraftforge.fml.common.FMLCommonHandler.handleServerStarted(FMLCommonHandler.java:300)
+
+-- Thread Dump --
+Details:
+	Threads: "Keep-Alive-Timer" Id=88 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at sun.net.www.http.KeepAliveCache.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"threadDeathWatcher-2-1" Id=70 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at io.netty.util.ThreadDeathWatcher$Watcher.run(ThreadDeathWatcher.java:152)
+	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"Netty Server IO #1" Id=69 RUNNABLE (in native)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@3b4690d6
+	-  locked java.util.Collections$UnmodifiableSet@358169ce
+	-  locked sun.nio.ch.WindowsSelectorImpl@31befba6
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"Server Watchdog" Id=68 RUNNABLE
+	at sun.management.ThreadImpl.dumpThreads0(Native Method)
+	at sun.management.ThreadImpl.dumpAllThreads(Unknown Source)
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:46)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"pool-3-thread-5" Id=56 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@74bc63f5
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@74bc63f5
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"pool-3-thread-4" Id=55 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@74bc63f5
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@74bc63f5
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"pool-3-thread-3" Id=54 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@74bc63f5
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@74bc63f5
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"pool-3-thread-2" Id=53 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@74bc63f5
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@74bc63f5
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"pool-3-thread-1" Id=52 WAITING on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@74bc63f5
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject@74bc63f5
+	at java.util.concurrent.locks.LockSupport.park(Unknown Source)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(Unknown Source)
+	at java.util.concurrent.LinkedBlockingQueue.take(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.getTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-3" Id=51 WAITING on java.util.concurrent.ForkJoinPool@7b739d94
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@7b739d94
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-10" Id=50 WAITING on java.util.concurrent.ForkJoinPool@7b739d94
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@7b739d94
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-1" Id=49 WAITING on java.util.concurrent.ForkJoinPool@7b739d94
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@7b739d94
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-8" Id=48 WAITING on java.util.concurrent.ForkJoinPool@7b739d94
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@7b739d94
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-15" Id=47 WAITING on java.util.concurrent.ForkJoinPool@7b739d94
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@7b739d94
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-6" Id=45 WAITING on java.util.concurrent.ForkJoinPool@7b739d94
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@7b739d94
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-13" Id=46 TIMED_WAITING on java.util.concurrent.ForkJoinPool@7b739d94
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@7b739d94
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-2" Id=42 WAITING on java.util.concurrent.ForkJoinPool@7b739d94
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@7b739d94
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"ForkJoinPool.commonPool-worker-9" Id=41 WAITING on java.util.concurrent.ForkJoinPool@7b739d94
+	at sun.misc.Unsafe.park(Native Method)
+	-  waiting on java.util.concurrent.ForkJoinPool@7b739d94
+	at java.util.concurrent.ForkJoinPool.awaitWork(Unknown Source)
+	at java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+"Netty Server IO #0" Id=36 RUNNABLE (in native)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(Unknown Source)
+	at sun.nio.ch.WindowsSelectorImpl.doSelect(Unknown Source)
+	at sun.nio.ch.SelectorImpl.lockAndDoSelect(Unknown Source)
+	-  locked io.netty.channel.nio.SelectedSelectionKeySet@4502542d
+	-  locked java.util.Collections$UnmodifiableSet@327f4e0
+	-  locked sun.nio.ch.WindowsSelectorImpl@14939cba
+	at sun.nio.ch.SelectorImpl.select(Unknown Source)
+	at io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+	at io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:732)
+	...
+
+
+"Server console handler" Id=20 RUNNABLE (in native)
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	-  locked java.io.BufferedInputStream@736b3c81
+	at sun.nio.cs.StreamDecoder.readBytes(Unknown Source)
+	at sun.nio.cs.StreamDecoder.implRead(Unknown Source)
+	at sun.nio.cs.StreamDecoder.read(Unknown Source)
+	-  locked java.io.InputStreamReader@249fadfd
+	at java.io.InputStreamReader.read(Unknown Source)
+	...
+
+
+"DestroyJavaVM" Id=19 RUNNABLE
+
+
+"Server thread" Id=17 RUNNABLE
+	at net.minecraftforge.event.ForgeEventFactory.gatherCapabilities(ForgeEventFactory.java:598)
+	at net.minecraft.world.World.initCapabilities(World.java:3952)
+	at net.minecraft.world.WorldServerMulti.func_175643_b(WorldServerMulti.java:79)
+	at net.minecraftforge.common.DimensionManager.initDimension(DimensionManager.java:244)
+	at net.minecraft.server.MinecraftServer.func_71218_a(MinecraftServer.java:830)
+	at hellfirepvp.astralsorcery.common.base.CelestialGatewaySystem.onServerStart(CelestialGatewaySystem.java:56)
+	at hellfirepvp.astralsorcery.AstralSorcery.onServerStarted(AstralSorcery.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	...
+
+
+"Server Infinisleeper" Id=16 TIMED_WAITING
+	at java.lang.Thread.sleep(Native Method)
+	at net.minecraft.server.dedicated.DedicatedServer$1.run(DedicatedServer.java:82)
+
+
+"Snooper Timer" Id=15 WAITING on java.util.TaskQueue@3a784d26
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.util.TaskQueue@3a784d26
+	at java.lang.Object.wait(Unknown Source)
+	at java.util.TimerThread.mainLoop(Unknown Source)
+	at java.util.TimerThread.run(Unknown Source)
+
+
+"Attach Listener" Id=5 RUNNABLE
+
+
+"Signal Dispatcher" Id=4 RUNNABLE
+
+
+"Finalizer" Id=3 WAITING on java.lang.ref.ReferenceQueue$Lock@6351efd1
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.ReferenceQueue$Lock@6351efd1
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.ReferenceQueue.remove(Unknown Source)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Unknown Source)
+
+
+"Reference Handler" Id=2 WAITING on java.lang.ref.Reference$Lock@659f26cc
+	at java.lang.Object.wait(Native Method)
+	-  waiting on java.lang.ref.Reference$Lock@659f26cc
+	at java.lang.Object.wait(Unknown Source)
+	at java.lang.ref.Reference.tryHandlePending(Unknown Source)
+	at java.lang.ref.Reference$ReferenceHandler.run(Unknown Source)
+
+
+
+Stacktrace:
+	at net.minecraft.server.dedicated.ServerHangWatchdog.run(ServerHangWatchdog.java:63)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_151, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 2232246704 bytes (2128 MB) / 2874146816 bytes (2741 MB) up to 5726797824 bytes (5461 MB)
+	JVM Flags: 1 total; -Xmx6144M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 95
+	FML: MCP 9.42 Powered by Forge 14.23.0.2522 119 mods loaded, 118 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State     | ID                   | Version                  | Source                                          | Signature                                |
+	|:--------- |:-------------------- |:------------------------ |:----------------------------------------------- |:---------------------------------------- |
+	| UCHIJAAAA | minecraft            | 1.12.2                   | minecraft.jar                                   | None                                     |
+	| UCHIJAAAA | mcp                  | 9.42                     | minecraft.jar                                   | None                                     |
+	| UCHIJAAAA | FML                  | 8.0.99.99                | ForgeMod.jar                                    | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| UCHIJAAAA | forge                | 14.23.0.2522             | ForgeMod.jar                                    | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	| UCHIJAAAA | advancedrocketrycore | 1                        | minecraft.jar                                   | None                                     |
+	| UCHIJAAAA | foamfixcore          | 7.7.4                    | minecraft.jar                                   | None                                     |
+	| UCHIJAAAA | crafttweaker         | 4.0.9                    | CraftTweaker2-1.12-4.0.9.jar                    | None                                     |
+	| UCHIJAAAA | mtlib                | @VERSION@                | MTLib-3.0.1.jar                                 | None                                     |
+	| UCHIJAAAA | modtweaker           | 4.0.4                    | modtweaker-4.0.4.jar                            | None                                     |
+	| UCHIJAAAA | jei                  | 4.8.0.111                | jei_1.12.2-4.8.0.111.jar                        | None                                     |
+	| UCHIJAAAA | abyssalcraft         | 1.9.4.1                  | AbyssalCraft-1.12.2-1.9.4.1.jar                 | 220f10d3a93b3ff5fbaa7434cc629d863d6751b9 |
+	| UCHIJAAAA | actuallyadditions    | 1.12.2-r123              | ActuallyAdditions-1.12.2-r123.jar               | None                                     |
+	| UCHIJAAAA | libvulpes            | 0.2.6.                   | LibVulpes-1.12.2-0.2.6-universal.jar            | None                                     |
+	| UCHIJAAAA | advancedrocketry     | 1.2.5a.                  | AdvancedRocketry-1.12.2-1.2.5a.jar              | None                                     |
+	| UCHIJAAAA | baubles              | 1.5.1                    | Baubles-1.12-1.5.1.jar                          | None                                     |
+	| UCHIJAAAA | chisel               | MC1.12-0.0.14.18         | Chisel-MC1.12-0.0.14.18.jar                     | None                                     |
+	| UCHIJAAAA | mantle               | 1.12-1.3.1.21            | Mantle-1.12-1.3.1.21.jar                        | None                                     |
+	| UCHIJAAAA | tconstruct           | 1.12-2.7.4.34            | TConstruct-1.12-2.7.4.34.jar                    | None                                     |
+	| UCHIJAAAA | extrautils2          | 1.0                      | extrautils2-1.12-1.6.4.jar                      | None                                     |
+	| UCHIJAAAA | flyringbaublemod     | 0.3.0_1.12-306787e       | angelRingToBauble-1.12-0.3.0.46+306787e.jar     | None                                     |
+	| UCHIJAAA  | astralsorcery        | 1.7.2                    | astralsorcery-1.12.2-1.7.2.jar                  | a0f0b759d895c15ceb3e3bcb5f3c2db7c582edf0 |
+	| UCHIJAAA  | cd4017be_lib         | 6.0.1                    | CD4017BE_lib-1.12.2-6.0.1.jar                   | None                                     |
+	| UCHIJAAA  | circuits             | 6.0.1                    | AutomatedRedstone-1.12.2-6.0.1.jar              | None                                     |
+	| UCHIJAAA  | morphtool            | 1.2-16                   | Morph-o-Tool-1.2-16.jar                         | None                                     |
+	| UCHIJAAA  | psi                  | r1.1-58                  | Psi-r1.1-58.jar                                 | None                                     |
+	| UCHIJAAA  | autoreglib           | 1.3-14                   | AutoRegLib-1.3-14.jar                           | None                                     |
+	| UCHIJAAA  | bdlib                | 1.14.3.10                | bdlib-1.14.3.10-mc1.12.2.jar                    | None                                     |
+	| UCHIJAAA  | bedbugs              | @VERSION@                | BedBugs-1.12-1.0.1.jar                          | None                                     |
+	| UCHIJAAA  | betterbuilderswands  | 0.11.1                   | BetterBuildersWands-1.12-0.11.1.245+69d0d70.jar | None                                     |
+	| UCHIJAAA  | biomesoplenty        | 7.0.1.2302               | BiomesOPlenty-1.12.2-7.0.1.2302-universal.jar   | None                                     |
+	| UCHIJAAA  | hammercore           | 1.9.5.2                  | HammerCore-1.12.2-1.9.5.2.jar                   | None                                     |
+	| UCHIJAAA  | blackholestorage     | 20r                      | BlackHoleStorage-1.12.2-20r.jar                 | None                                     |
+	| UCHIJAAA  | bloodmoon            | 1.5.2                    | Bloodmoon-MC1.12.2-1.5.2.jar                    | d72e0dd57935b3e9476212aea0c0df352dd76291 |
+	| UCHIJAAA  | bookshelf            | 2.2.483                  | Bookshelf-1.12.2-2.2.483.jar                    | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| UCHIJAAA  | botania              | r1.10-349                | Botania r1.10-349.jar                           | None                                     |
+	| UCHIJAAA  | codechickenlib       | 3.1.3.313                | CodeChickenLib-1.12-3.1.3.313-universal.jar     | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| UCHIJAAA  | redstoneflux         | 2.0.1                    | RedstoneFlux-1.12-2.0.1.2-universal.jar         | d4f1503fbacd9b9fb767720420c5395104239ec9 |
+	| UCHIJAAA  | brandonscore         | 2.3.3                    | BrandonsCore-1.12-2.3.3.132-universal.jar       | None                                     |
+	| UCHIJAAA  | chameleon            | 1.12-4.1.3               | Chameleon-1.12-4.1.3.jar                        | None                                     |
+	| UCHIJAAA  | chesttransporter     | 2.8.7                    | ChestTransporter-1.12-2.8.7.jar                 | None                                     |
+	| UCHIJAAA  | chiselsandbits       | 14.9                     | chiselsandbits-14.9.jar                         | None                                     |
+	| UCHIJAAA  | chunkpregenerator    | 1.4                      | Chunk Pregenerator V-1.12-1.4.1.jar             | None                                     |
+	| UCHIJAAA  | cofhcore             | 4.3.6                    | CoFHCore-1.12-4.3.6.14-universal.jar            | None                                     |
+	| UCHIJAAA  | cofhworld            | 1.0.1                    | CoFHWorld-1.12-1.0.1.8-universal.jar            | None                                     |
+	| UCHIJAAA  | cyclopscore          | 0.10.22                  | CyclopsCore-1.12.2-0.10.22.jar                  | None                                     |
+	| UCHIJAAA  | colossalchests       | 1.6.7                    | ColossalChests-1.12-1.6.7.jar                   | None                                     |
+	| UCHIJAAA  | crafttweakerjei      | 2.0.0                    | CraftTweaker2-1.12-4.0.9.jar                    | None                                     |
+	| UCHIJAAA  | cucumber             | 1.0.2                    | cucumber[1.12]-1.0.2.jar                        | None                                     |
+	| UCHIJAAA  | waila                | 1.8.21                   | Hwyla-1.8.21-B36_1.12.jar                       | None                                     |
+	| UCHIJAAA  | darkutils            | 1.7.177                  | DarkUtils-1.12.2-1.7.177.jar                    | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| UCHIJAAA  | draconicevolution    | 2.3.4                    | Draconic-Evolution-1.12-2.3.4.265-universal.jar | None                                     |
+	| UCHIJAAA  | elevatorid           | 1.3.5                    | ElevatorMod-1.12.2-1.3.5.jar                    | None                                     |
+	| UCHIJAAA  | enderstorage         | 2.4.0.122                | EnderStorage-1.12-2.4.0.122-universal.jar       | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| UCHIJAAA  | valkyrielib          | 1.12-2.0.4b              | valkyrielib-1.12.X-2.0.4b.jar                   | None                                     |
+	| UCHIJAAA  | environmentaltech    | 1.12.X-2.0.4a            | environmentaltech-1.12.X-2.0.4a.jar             | None                                     |
+	| UCHIJAAA  | etlunar              | 1.12.X-2.0.4a            | etlunar-1.12.X-2.0.4a.jar                       | None                                     |
+	| UCHIJAAA  | zerocore             | 1.12-0.1.1.0             | zerocore-1.12-0.1.1.0.jar                       | None                                     |
+	| UCHIJAAA  | bigreactors          | 1.12-0.4.5.44            | ExtremeReactors-1.12-0.4.5.44.jar               | None                                     |
+	| UCHIJAAA  | fastleafdecay        | v14                      | FastLeafDecay-v14.jar                           | None                                     |
+	| UCHIJAAA  | mcmultipart          | 2.3.3                    | MCMultiPart-2.3.3.jar                           | None                                     |
+	| UCHIJAAA  | mekanism             | 9.4.1                    | Mekanism-1.12.1-9.4.1.326.jar                   | None                                     |
+	| UCHIJAAA  | sonarcore            | 5.0.2                    | sonarcore-1.12.2-5.0.2.jar                      | None                                     |
+	| UCHIJAAA  | fluxnetworks         | 3.0.1                    | fluxnetworks-1.12.2-3.0.1.jar                   | None                                     |
+	| UCHIJAAA  | foamfix              | 0.8.1-1.12               | FoamFixUnofficial-1.12-0.8.1-Anarchy.jar        | None                                     |
+	| UCHIJAAA  | forestry             | 5.7.0.209                | forestry_1.12.2-5.7.0.209.jar                   | None                                     |
+	| UCHIJAAA  | nei                  | ${mod_version}           | NotEnoughItems-1.12-2.4.0.231-universal.jar     | f1850c39b2516232a2108a7bd84d1cb5df93b261 |
+	| UCHIJAAA  | ftbl                 | 4.2.3                    | FTBLib-4.2.3.jar                                | None                                     |
+	| UCHIJAAA  | ftbu                 | 4.2.2                    | FTBUtilities-4.2.2.jar                          | None                                     |
+	| UCHIJAAA  | gardenofglass        | sqrt(-1)                 | GardenOfGlass.jar                               | None                                     |
+	| UCHIJAAA  | gendustry            | 1.6.5.6                  | gendustry-1.6.5.6-mc1.12.2.jar                  | None                                     |
+	| UCHIJAAA  | thermalfoundation    | 2.3.6                    | ThermalFoundation-1.12-2.3.6.16-universal.jar   | None                                     |
+	| UCHIJAAA  | advgenerators        | 0.9.20.9                 | generators-0.9.20.9-mc1.12.2.jar                | None                                     |
+	| UCHIJAAA  | gravestone           | 1.10.0                   | gravestone-1.10.0.jar                           | None                                     |
+	| UCHIJAAA  | immersiveengineering | 0.12-74                  | ImmersiveEngineering-0.12-74.jar                | 4cb49fcde3b43048c9889e0a3d083225da926334 |
+	| UCHIJAAA  | immersivepetroleum   | 1.1.3                    | immersivepetroleum-1.12-1.1.3.jar               | None                                     |
+	| UCHIJAAA  | immersivetech        | 1.3.4                    | immersivetech-1.12-1.3.4.jar                    | None                                     |
+	| UCHIJAAA  | initialinventory     | 2.0.2                    | InitialInventory-3.0.0.jar                      | None                                     |
+	| UCHIJAAA  | inventorytweaks      | 1.63+release.109.220f184 | InventoryTweaks-1.63.jar                        | 55d2cd4f5f0961410bf7b91ef6c6bf00a766dcbe |
+	| UCHIJAAA  | ironchest            | 1.12.2-7.0.34.820        | ironchest-1.12.2-7.0.34.820.jar                 | None                                     |
+	| UCHIJAAA  | journeymap           | 1.12.2-5.5.2b1           | journeymap-1.12.2-5.5.2b1.jar                   | None                                     |
+	| UCHIJAAA  | kleeslabs            | 5.3.2                    | KleeSlabs_1.12-5.3.2.jar                        | None                                     |
+	| UCHIJAAA  | malisiscore          | 1.12.2-6.1.7             | malisiscore-1.12.2-6.1.7.jar                    | None                                     |
+	| UCHIJAAA  | malisisdoors         | 1.12.2-7.1.1             | malisisdoors-1.12.2-7.1.1.jar                   | None                                     |
+	| UCHIJAAA  | mekanismgenerators   | 9.4.1                    | MekanismGenerators-1.12.1-9.4.1.326.jar         | None                                     |
+	| UCHIJAAA  | mob_grinding_utils   | 0.3.2                    | MobGrindingUtils-0.3.2.jar                      | None                                     |
+	| UCHIJAAA  | morpheus             | 1.12-3.3.2               | Morpheus-1.12-3.3.2.jar                         | None                                     |
+	| UCHIJAAA  | mysticalagriculture  | 1.6.6                    | mysticalagriculture-1.12-1.6.6.jar              | None                                     |
+	| UCHIJAAA  | mysticalagradditions | 1.2.5                    | mysticalagradditions-1.12-1.2.5.jar             | None                                     |
+	| UCHIJAAA  | projecte             | 1.12-PE1.1.0             | ProjectE-1.12-PE1.1.0.jar                       | None                                     |
+	| UCHIJAAA  | p455w0rdslib         | 2.0.23                   | p455w0rdslib-1.12-2.0.23.jar                    | None                                     |
+	| UCHIJAAA  | harvestcraft         | 1.12.2a                  | Pam's HarvestCraft 1.12.2a.jar                  | None                                     |
+	| UCHIJAAA  | plustic              | 6.3.2.0                  | plustic-6.3.2.0.jar                             | None                                     |
+	| UCHIJAAA  | randomthings         | 4.0.8                    | RandomThings-MC1.12.2-4.0.8.jar                 | d72e0dd57935b3e9476212aea0c0df352dd76291 |
+	| UCHIJAAA  | reborncore           | 3.4.10.147               | RebornCore-1.12.2-3.4.10.147-universal.jar      | 8727a3141c8ec7f173b87aa78b9b9807867c4e6b |
+	| UCHIJAAA  | storagedrawers       | 1.12-5.2.5               | StorageDrawers-1.12.1-5.3.3.jar                 | None                                     |
+	| UCHIJAAA  | refinedstorage       | 1.5.21                   | refinedstorage-1.5.21.jar                       | None                                     |
+	| UCHIJAAA  | rebornstorage        | 1.0.0                    | RebornStorage-1.12-2.0.1.6.jar                  | None                                     |
+	| UCHIJAAA  | refinedstorageaddons | 0.2                      | refinedstorageaddons-0.2.jar                    | None                                     |
+	| UCHIJAAA  | rftools              | 7.12                     | rftools-1.12-7.12.jar                           | None                                     |
+	| UCHIJAAA  | rftoolsdim           | 5.05                     | rftoolsdim-1.12-5.05.jar                        | None                                     |
+	| UCHIJAAA  | simplefluidtanks     | 1.12.1-1.7.0.0           | simplefluidtanks-1.12.1-1.7.0.0.jar             | None                                     |
+	| UCHIJAAA  | simplyenchanting     | 1.0.3                    | SimplyEnchanting-1.12-1.0.3.jar                 | None                                     |
+	| UCHIJAAA  | skyislandscreator    | 1.3                      | SkyIslandsCreator-1.12-1.3.jar                  | None                                     |
+	| UCHIJAAA  | snad                 | 1.12.1-1.7.09.16a        | Snad-1.12.1-1.7.09.16a.jar                      | None                                     |
+	| UCHIJAAA  | solarfluxreborn      | 3.42r                    | SolarFluxReborn_1.12.2-3.42r.jar                | None                                     |
+	| UCHIJAAA  | thermaldynamics      | 2.3.6                    | ThermalDynamics-1.12-2.3.6.13-universal.jar     | None                                     |
+	| UCHIJAAA  | thermalexpansion     | 5.3.6                    | ThermalExpansion-1.12-5.3.6.20-universal.jar    | None                                     |
+	| UCHIJAAA  | tinkertoolleveling   | 1.12-1.0.2b.DEV.1a79301  | TinkerToolLeveling-1.12-1.0.2b.jar              | None                                     |
+	| UCHIJAAA  | tp                   | 1.12                     | tinyprogressions-1.12-3.2.10 - Beta.jar         | None                                     |
+	| UCHIJAAA  | torchmaster          | 1.6.1.53                 | torchmaster_1.12.2-1.6.1.53.jar                 | 5e9a436b366831c8f54a7e80b015784da69278c6 |
+	| UCHIJAAA  | treegrowingsimulator | 0.0.4                    | TreeGrowingSimulator2017-1.0.1.jar              | None                                     |
+	| UCHIJAAA  | twilightforest       | 3.3.202                  | twilightforest-1.12.2-3.3.202-universal.jar     | None                                     |
+	| UCHIJAAA  | usefulnullifiers     | 1.4.1                    | usefulnullifiers-1.4.1.jar                      | None                                     |
+	| UCHIJAAA  | veinminer            | 0.38.1                   | VeinMiner-1.12-0.38.1.639+134fb1e.jar           | None                                     |
+	| UCHIJAAA  | veinminermodsupport  | 0.38.1                   | VeinMiner-1.12-0.38.1.639+134fb1e.jar           | None                                     |
+	| UCHIJAAA  | wanionlib            | 1.12.2-1.0               | WanionLib-1.12.2-1.0.jar                        | None                                     |
+	| UCHIJAAA  | wawla                | 2.5.246                  | Wawla-1.12.2-2.5.246.jar                        | d476d1b22b218a10d845928d1665d45fce301b27 |
+	| UCHIJAAA  | unidict              | 1.12.2-1.0               | UniDict-1.12.2-1.0.jar                          | None                                     |
+	| UD        | solarfluxreborncore  | 3.42r                    | minecraft.jar                                   | None                                     |
+
+	Loaded coremods (and transformers): 
+AdvancedRocketryPlugin (AdvancedRocketry-1.12.2-1.2.5a.jar)
+  zmaster587.advancedRocketry.asm.ClassTransformer
+Do not report to Forge! Remove FoamFixAPI (or replace with FoamFixAPI-Lawful) and try again. (FoamFixUnofficial-1.12-0.8.1-Anarchy.jar)
+  pl.asie.foamfix.coremod.FoamFixTransformer
+Inventory Tweaks Coremod (InventoryTweaks-1.63.jar)
+  invtweaks.forge.asm.ContainerTransformer
+MalisisCorePlugin (malisiscore-1.12.2-6.1.7.jar)
+  
+LoadingPlugin (Bloodmoon-MC1.12.2-1.5.2.jar)
+  lumien.bloodmoon.asm.ClassTransformer
+IELoadingPlugin (ImmersiveEngineering-0.12-74-core.jar)
+  blusunrize.immersiveengineering.common.asm.IEClassTransformer
+HammerCoreCore (HammerCore-1.12.2-1.9.5.2.jar)
+  com.pengu.hammercore.asm.HammerCoreTransformer
+LoadingPlugin (ResourceLoader-MC1.12.1-1.5.3.jar)
+  lumien.resourceloader.asm.ClassTransformer
+SFRCore (SolarFluxReborn_1.12.2-3.42r.jar)
+  com.pengu.solarfluxreborn.core.SFRSerializedTransformer
+LoadingPlugin (RandomThings-MC1.12.2-4.0.8.jar)
+  lumien.randomthings.asm.ClassTransformer
+CTMCorePlugin (CTM-MC1.12-0.2.3.9.jar)
+  team.chisel.ctm.client.asm.CTMTransformer
+AstralCore (astralsorcery-1.12.2-1.7.2.jar)
+  
+	Pulsar/tconstruct loaded Pulses: 
+		- TinkerCommons (Enabled/Forced)
+		- TinkerWorld (Enabled/Not Forced)
+		- TinkerTools (Enabled/Not Forced)
+		- TinkerHarvestTools (Enabled/Forced)
+		- TinkerMeleeWeapons (Enabled/Forced)
+		- TinkerRangedWeapons (Enabled/Forced)
+		- TinkerModifiers (Enabled/Forced)
+		- TinkerSmeltery (Enabled/Not Forced)
+		- TinkerGadgets (Enabled/Not Forced)
+		- TinkerOredict (Enabled/Forced)
+		- TinkerIntegration (Enabled/Forced)
+		- TinkerFluids (Enabled/Forced)
+		- TinkerMaterials (Enabled/Forced)
+		- TinkerModelRegister (Enabled/Forced)
+		- chiselIntegration (Enabled/Not Forced)
+		- chiselsandbitsIntegration (Enabled/Not Forced)
+		- wailaIntegration (Enabled/Not Forced)
+
+	List of loaded APIs: 
+		* AbyssalCraftAPI (1.10.1) from AbyssalCraft-1.12.2-1.9.4.1.jar
+		* AbyssalCraftAPI|Biome (1.10.1) from AbyssalCraft-1.12.2-1.9.4.1.jar
+		* AbyssalCraftAPI|Block (1.10.1) from AbyssalCraft-1.12.2-1.9.4.1.jar
+		* AbyssalCraftAPI|Condition (1.10.1) from AbyssalCraft-1.12.2-1.9.4.1.jar
+		* AbyssalCraftAPI|Disruption (1.10.1) from AbyssalCraft-1.12.2-1.9.4.1.jar
+		* AbyssalCraftAPI|Energy (1.10.1) from AbyssalCraft-1.12.2-1.9.4.1.jar
+		* AbyssalCraftAPI|Entity (1.10.1) from AbyssalCraft-1.12.2-1.9.4.1.jar
+		* AbyssalCraftAPI|Event (1.10.1) from AbyssalCraft-1.12.2-1.9.4.1.jar
+		* AbyssalCraftAPI|Integration (1.10.1) from AbyssalCraft-1.12.2-1.9.4.1.jar
+		* AbyssalCraftAPI|Internal (1.10.1) from AbyssalCraft-1.12.2-1.9.4.1.jar
+		* AbyssalCraftAPI|Item (1.10.1) from AbyssalCraft-1.12.2-1.9.4.1.jar
+		* AbyssalCraftAPI|Necronomicon (1.10.1) from AbyssalCraft-1.12.2-1.9.4.1.jar
+		* AbyssalCraftAPI|Recipe (1.10.1) from AbyssalCraft-1.12.2-1.9.4.1.jar
+		* AbyssalCraftAPI|Ritual (1.10.1) from AbyssalCraft-1.12.2-1.9.4.1.jar
+		* AbyssalCraftAPI|Spell (1.10.1) from AbyssalCraft-1.12.2-1.9.4.1.jar
+		* actuallyadditionsapi (33) from ActuallyAdditions-1.12.2-r123.jar
+		* appliedenergistics2|API (rv5) from simplefluidtanks-1.12.1-1.7.0.0.jar
+		* Baubles|API (1.4.0.2) from Baubles-1.12-1.5.1.jar
+		* bigreactors|API (4.0.1) from ExtremeReactors-1.12-0.4.5.44.jar
+		* BotaniaAPI (88) from Botania r1.10-349.jar
+		* chesttransporter|api (2) from ChestTransporter-1.12-2.8.7.jar
+		* Chisel-API (0.0.1) from Chisel-MC1.12-0.0.14.18.jar
+		* ChiselAPI|Carving (0.0.1) from Chisel-MC1.12-0.0.14.18.jar
+		* ChiselsAndBitsAPI (13.8.0) from chiselsandbits-14.9.jar
+		* cofhapi (2.0.0) from simplefluidtanks-1.12.1-1.7.0.0.jar
+		* cofhapi|block (2.0.0) from CoFHCore-1.12-4.3.6.14-universal.jar
+		* cofhapi|core (2.0.0) from CoFHCore-1.12-4.3.6.14-universal.jar
+		* cofhapi|item (2.0.0) from CoFHCore-1.12-4.3.6.14-universal.jar
+		* cofhapi|tileentity (2.0.0) from CoFHCore-1.12-4.3.6.14-universal.jar
+		* cofhapi|util (2.0.0) from CoFHCore-1.12-4.3.6.14-universal.jar
+		* ctm-api (0.1.0) from CTM-MC1.12-0.2.3.9.jar
+		* ctm-api-events (0.1.0) from CTM-MC1.12-0.2.3.9.jar
+		* ctm-api-models (0.1.0) from CTM-MC1.12-0.2.3.9.jar
+		* ctm-api-textures (0.1.0) from CTM-MC1.12-0.2.3.9.jar
+		* ctm-api-utils (0.1.0) from CTM-MC1.12-0.2.3.9.jar
+		* DraconicEvolution|API (1.3) from Draconic-Evolution-1.12-2.3.4.265-universal.jar
+		* fluxapi (1.0) from fluxnetworks-1.12.2-3.0.1.jar
+		* ForestryAPI|apiculture (5.0.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|arboriculture (4.3.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|circuits (3.1.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|climate (5.0.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|core (5.7.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|farming (2.2.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|food (1.1.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|fuels (3.0.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|genetics (5.7.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|greenhouse (5.2.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|hives (4.1.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|lepidopterology (1.4.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|mail (3.1.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|modules (5.7.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|multiblock (3.0.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|recipes (5.4.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|storage (5.0.0) from forestry_1.12.2-5.7.0.209.jar
+		* ForestryAPI|world (2.1.0) from forestry_1.12.2-5.7.0.209.jar
+		* gendustryAPI (2.3.0) from gendustry-1.6.5.6-mc1.12.2.jar
+		* ImmersiveEngineering|API (1.0) from ImmersiveEngineering-0.12-74.jar
+		* ImmersiveEngineering|ImmersiveFluxAPI (1.0) from ImmersiveEngineering-0.12-74.jar
+		* journeymap|client-api (1.4) from journeymap-1.12.2-5.5.2b1.jar
+		* journeymap|client-api-display (1.4) from journeymap-1.12.2-5.5.2b1.jar
+		* journeymap|client-api-event (1.4) from journeymap-1.12.2-5.5.2b1.jar
+		* journeymap|client-api-model (1.4) from journeymap-1.12.2-5.5.2b1.jar
+		* journeymap|client-api-util (1.4) from journeymap-1.12.2-5.5.2b1.jar
+		* JustEnoughItemsAPI (4.13.0) from jei_1.12.2-4.8.0.111.jar
+		* mcjtylib_ng (2.4.4) from mcjtylib-1.12-2.4.4.jar
+		* MekanismAPI|core (9.0.0) from Mekanism-1.12.1-9.4.1.326.jar
+		* MekanismAPI|energy (9.0.0) from Mekanism-1.12.1-9.4.1.326.jar
+		* MekanismAPI|gas (9.0.0) from Mekanism-1.12.1-9.4.1.326.jar
+		* MekanismAPI|infuse (9.0.0) from Mekanism-1.12.1-9.4.1.326.jar
+		* MekanismAPI|laser (9.0.0) from Mekanism-1.12.1-9.4.1.326.jar
+		* MekanismAPI|transmitter (9.0.0) from Mekanism-1.12.1-9.4.1.326.jar
+		* MekanismAPI|util (9.0.0) from Mekanism-1.12.1-9.4.1.326.jar
+		* MouseTweaks|API (1.0) from MouseTweaks-2.8-mc1.12.1.jar
+		* projecteapi (1.11.2-1.0.0) from ProjectE-1.12-PE1.1.0.jar
+		* ProjectEAPI (1.9.4-1.0.0) from p455w0rdslib-1.12-2.0.23.jar
+		* PsiAPI (6) from Psi-r1.1-58.jar
+		* reborncoreAPI (3.4.10.147) from RebornCore-1.12.2-3.4.10.147-universal.jar
+		* reborncoreAPI|Power (3.4.10.147) from RebornCore-1.12.2-3.4.10.147-universal.jar
+		* reborncoreAPI|Recipe (3.4.10.147) from RebornCore-1.12.2-3.4.10.147-universal.jar
+		* reborncoreAPI|Tile (3.4.10.147) from RebornCore-1.12.2-3.4.10.147-universal.jar
+		* sonarapi (1.0.1) from sonarcore-1.12.2-5.0.2.jar
+		* StorageDrawersAPI (2.1.0) from StorageDrawers-1.12.1-5.3.3.jar
+		* StorageDrawersAPI|event (2.1.0) from StorageDrawers-1.12.1-5.3.3.jar
+		* StorageDrawersAPI|registry (2.1.0) from StorageDrawers-1.12.1-5.3.3.jar
+		* StorageDrawersAPI|render (2.1.0) from StorageDrawers-1.12.1-5.3.3.jar
+		* StorageDrawersAPI|storage (2.1.0) from StorageDrawers-1.12.1-5.3.3.jar
+		* StorageDrawersAPI|storage-attribute (2.1.0) from StorageDrawers-1.12.1-5.3.3.jar
+		* valkyrielib.api (1.12-2.0.1a) from valkyrielib-1.12.X-2.0.4b.jar
+		* veinminerApi (0.3) from VeinMiner-1.12-0.38.1.639+134fb1e.jar
+		* WailaAPI (1.3) from Hwyla-1.8.21-B36_1.12.jar
+		* zerocore|API|multiblock (1.10.2-0.0.2) from zerocore-1.12-0.1.1.0.jar
+		* zerocore|API|multiblock|rectangular (1.10.2-0.0.2) from zerocore-1.12-0.1.1.0.jar
+		* zerocore|API|multiblock|tier (1.10.2-0.0.2) from zerocore-1.12-0.1.1.0.jar
+		* zerocore|API|multiblock|validation (1.10.2-0.0.2) from zerocore-1.12-0.1.1.0.jar
+	RebornCore: 
+		Plugin Engine: 0
+		RebornCore Version: 3.4.10.147
+		Runtime Debofucsation 1
+	Profiler Position: N/A (disabled)
+	Player Count: 0 / 10; []
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)

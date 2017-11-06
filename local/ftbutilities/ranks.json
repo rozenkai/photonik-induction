@@ -1,0 +1,22 @@
+{
+  "default_ranks": {
+    "player": "player",
+    "op": "op"
+  },
+  "ranks": {
+    "player": {
+      "parent": "builtin_player",
+      "permissions": [
+        "+command.skyislands_join",
+        "+command.skyislands_create"
+      ],
+      "config": {}
+    },
+    "op": {
+      "parent": "builtin_op",
+      "syntax": "<&2$name&r> ",
+      "permissions": [],
+      "config": {}
+    }
+  }
+}

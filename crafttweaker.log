@@ -1,0 +1,42 @@
+[INITIALIZATION][SERVER][INFO] CraftTweaker: Building registry
+[INITIALIZATION][SERVER][INFO] CraftTweaker: Successfully built item registry
+[INITIALIZATION][SERVER][INFO] Loading scripts
+[INITIALIZATION][SERVER][INFO] [crafttweaker | SIDE_SERVER]: Loading Script: {[0:crafttweaker]: 00-startinginventory.zs}
+[INITIALIZATION][SERVER][INFO] Adding 1 Initial Inventory Recipe(s) for <mysticalagriculture:water_seeds>:-1
+[INITIALIZATION][SERVER][INFO] Adding 1 Initial Inventory Recipe(s) for <mysticalagriculture:stone_seeds>:-1
+[INITIALIZATION][SERVER][INFO] Adding 1 Initial Inventory Recipe(s) for <mysticalagriculture:dirt_seeds>:-1
+[INITIALIZATION][SERVER][INFO] Adding 1 Initial Inventory Recipe(s) for <mysticalagriculture:nature_seeds>:-1
+[INITIALIZATION][SERVER][INFO] Adding 1 Initial Inventory Recipe(s) for <mysticalagriculture:iron_seeds>:-1
+[INITIALIZATION][SERVER][INFO] Adding 1 Initial Inventory Recipe(s) for <mysticalagriculture:fire_seeds>:-1
+[INITIALIZATION][SERVER][INFO] Adding 1 Initial Inventory Recipe(s) for <mysticalagriculture:redstone_seeds>:-1
+[INITIALIZATION][SERVER][INFO] Adding 1 Initial Inventory Recipe(s) for <tp:watering_can>:-1
+[INITIALIZATION][SERVER][INFO] Adding 1 Initial Inventory Recipe(s) for <minecraft:sapling>:-1
+[INITIALIZATION][SERVER][INFO] [crafttweaker | SIDE_SERVER]: Loading Script: {[0:crafttweaker]: 01-recipes.zs}
+[INITIALIZATION][SERVER][INFO] [crafttweaker | SIDE_SERVER]: Loading Script: {[0:crafttweaker]: 03-furnace.zs}
+[POSTINITIALIZATION][SERVER][INFO] Removing all recipes for <projecte:transmutation_table>
+[POSTINITIALIZATION][SERVER][INFO] Removing all recipes for <projecte:collector_mk1>
+[POSTINITIALIZATION][SERVER][INFO] Removing all recipes for <projecte:alchemical_chest>
+[POSTINITIALIZATION][SERVER][INFO] Removing all recipes for <projecte:item.pe_philosophers_stone>
+[POSTINITIALIZATION][SERVER][INFO] Removing Shapeless recipes for <minecraft:ender_pearl>
+[POSTINITIALIZATION][SERVER][INFO] Removing Shapeless recipes for <projecte:item.pe_fuel>
+[POSTINITIALIZATION][SERVER][INFO] Removing all recipes for <minecraft:dragon_egg>
+[POSTINITIALIZATION][SERVER][INFO] Removing all recipes for <minecraft:end_crystal>
+[POSTINITIALIZATION][SERVER][INFO] Removing all recipes for <minecraft:end_portal_frame>
+[POSTINITIALIZATION][SERVER][INFO] Removing all recipes for <tp:watering_can_upgrade>
+[POSTINITIALIZATION][SERVER][INFO] Adding shaped recipe for Transmutation Table with name ct_shaped36860817
+[POSTINITIALIZATION][SERVER][INFO] Adding shaped recipe for Energy Collector MK1 with name ct_shaped-924359094
+[POSTINITIALIZATION][SERVER][INFO] Adding shaped recipe for Alchemical Chest with name ct_shaped734964969
+[POSTINITIALIZATION][SERVER][INFO] Adding shaped recipe for Philosopher's Stone with name ct_shaped-355080065
+[POSTINITIALIZATION][SERVER][INFO] Adding shaped recipe for Dragon Egg with name ct_shaped-2639076
+[POSTINITIALIZATION][SERVER][INFO] Adding shaped recipe for End Crystal with name ct_shaped1900627575
+[POSTINITIALIZATION][SERVER][INFO] Adding shaped recipe for End Portal with name ct_shaped-1645174808
+[POSTINITIALIZATION][SERVER][INFO] Adding shaped recipe for Sea Lantern with name ct_shaped957649556
+[POSTINITIALIZATION][SERVER][INFO] Adding shapeless recipe for Lapis Lazuli with name ct_shapeless1236056358
+[POSTINITIALIZATION][SERVER][INFO] Adding shaped recipe for Drop of Evil with name ct_shaped863645037
+[POSTINITIALIZATION][SERVER][INFO] Adding shaped recipe for Wither Skeleton Skull with name ct_shaped1999917623
+[POSTINITIALIZATION][SERVER][INFO] Adding shaped recipe for Reinforced Watering Can with name ct_shaped1617344541
+[POSTINITIALIZATION][SERVER][INFO] Adding shaped recipe for Charged Draconium Block with name ct_shaped-485950893
+[POSTINITIALIZATION][SERVER][INFO] Adding shaped recipe for Dragon Heart with name ct_shaped-14059188
+[POSTINITIALIZATION][SERVER][INFO] Adding furnace recipe for <minecraft:rotten_flesh>
+[POSTINITIALIZATION][SERVER][INFO] Adding furnace recipe for <thermalfoundation:ore:4>
+[POSTINITIALIZATION][SERVER][INFO] Adding furnace recipe for <immersiveengineering:metal:10>

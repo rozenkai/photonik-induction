@@ -1,0 +1,199 @@
+[18:30:10] [Server thread/INFO]: Starting minecraft server version 1.12.2
+[18:30:42] [Server thread/INFO]: Loading properties
+[18:30:42] [Server thread/INFO]: Default game type: SURVIVAL
+[18:30:42] [Server thread/INFO]: Generating keypair
+[18:30:42] [Server thread/INFO]: Starting Minecraft server on *:25575
+[18:30:42] [Server thread/INFO]: Using default channel type
+[18:31:06] [Server thread/WARN]: PriceRange(-4, -8) invalid, -8 smaller than -4
+[18:31:11] [Server thread/INFO]: Preparing level "Photonik Induction"
+[18:31:12] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/pumpkin_pie
+com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:pumpkin_pie'
+	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(SourceFile:166) ~[l$a.class:?]
+	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(SourceFile:150) ~[l$a.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188177_a(SourceFile:455) ~[rc.class:?]
+	at net.minecraft.advancements.Advancement$Builder.func_192059_a(SourceFile:203) ~[i$a.class:?]
+	at net.minecraft.advancements.AdvancementManager$1.deserialize(AdvancementManager.java:50) ~[ns$1.class:?]
+	at net.minecraft.advancements.AdvancementManager$1.deserialize(AdvancementManager.java:46) ~[ns$1.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at net.minecraft.util.JsonUtils.func_188173_a(SourceFile:492) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_193839_a(SourceFile:532) ~[rc.class:?]
+	at net.minecraft.advancements.AdvancementManager.func_192777_a(AdvancementManager.java:184) [ns.class:?]
+	at net.minecraft.advancements.AdvancementManager.func_192779_a(AdvancementManager.java:68) [ns.class:?]
+	at net.minecraft.advancements.AdvancementManager.<init>(AdvancementManager.java:60) [ns.class:?]
+	at net.minecraft.world.WorldServer.func_175643_b(WorldServer.java:156) [oo.class:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:298) [MinecraftServer.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:270) [nz.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:484) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_151]
+[18:31:12] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/mushroom_stew
+com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:mushroom_stew'
+	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(SourceFile:166) ~[l$a.class:?]
+	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(SourceFile:150) ~[l$a.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188177_a(SourceFile:455) ~[rc.class:?]
+	at net.minecraft.advancements.Advancement$Builder.func_192059_a(SourceFile:203) ~[i$a.class:?]
+	at net.minecraft.advancements.AdvancementManager$1.deserialize(AdvancementManager.java:50) ~[ns$1.class:?]
+	at net.minecraft.advancements.AdvancementManager$1.deserialize(AdvancementManager.java:46) ~[ns$1.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at net.minecraft.util.JsonUtils.func_188173_a(SourceFile:492) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_193839_a(SourceFile:532) ~[rc.class:?]
+	at net.minecraft.advancements.AdvancementManager.func_192777_a(AdvancementManager.java:184) [ns.class:?]
+	at net.minecraft.advancements.AdvancementManager.func_192779_a(AdvancementManager.java:68) [ns.class:?]
+	at net.minecraft.advancements.AdvancementManager.<init>(AdvancementManager.java:60) [ns.class:?]
+	at net.minecraft.world.WorldServer.func_175643_b(WorldServer.java:156) [oo.class:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:298) [MinecraftServer.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:270) [nz.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:484) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_151]
+[18:31:12] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/cookie
+com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:cookie'
+	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(SourceFile:166) ~[l$a.class:?]
+	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(SourceFile:150) ~[l$a.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188177_a(SourceFile:455) ~[rc.class:?]
+	at net.minecraft.advancements.Advancement$Builder.func_192059_a(SourceFile:203) ~[i$a.class:?]
+	at net.minecraft.advancements.AdvancementManager$1.deserialize(AdvancementManager.java:50) ~[ns$1.class:?]
+	at net.minecraft.advancements.AdvancementManager$1.deserialize(AdvancementManager.java:46) ~[ns$1.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at net.minecraft.util.JsonUtils.func_188173_a(SourceFile:492) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_193839_a(SourceFile:532) ~[rc.class:?]
+	at net.minecraft.advancements.AdvancementManager.func_192777_a(AdvancementManager.java:184) [ns.class:?]
+	at net.minecraft.advancements.AdvancementManager.func_192779_a(AdvancementManager.java:68) [ns.class:?]
+	at net.minecraft.advancements.AdvancementManager.<init>(AdvancementManager.java:60) [ns.class:?]
+	at net.minecraft.world.WorldServer.func_175643_b(WorldServer.java:156) [oo.class:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:298) [MinecraftServer.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:270) [nz.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:484) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_151]
+[18:31:13] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/bread
+com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:bread'
+	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(SourceFile:166) ~[l$a.class:?]
+	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(SourceFile:150) ~[l$a.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188177_a(SourceFile:455) ~[rc.class:?]
+	at net.minecraft.advancements.Advancement$Builder.func_192059_a(SourceFile:203) ~[i$a.class:?]
+	at net.minecraft.advancements.AdvancementManager$1.deserialize(AdvancementManager.java:50) ~[ns$1.class:?]
+	at net.minecraft.advancements.AdvancementManager$1.deserialize(AdvancementManager.java:46) ~[ns$1.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at net.minecraft.util.JsonUtils.func_188173_a(SourceFile:492) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_193839_a(SourceFile:532) ~[rc.class:?]
+	at net.minecraft.advancements.AdvancementManager.func_192777_a(AdvancementManager.java:184) [ns.class:?]
+	at net.minecraft.advancements.AdvancementManager.func_192779_a(AdvancementManager.java:68) [ns.class:?]
+	at net.minecraft.advancements.AdvancementManager.<init>(AdvancementManager.java:60) [ns.class:?]
+	at net.minecraft.world.WorldServer.func_175643_b(WorldServer.java:156) [oo.class:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:298) [MinecraftServer.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:270) [nz.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:484) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_151]
+[18:31:13] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/food/beetroot_soup
+com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:beetroot_soup'
+	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(SourceFile:166) ~[l$a.class:?]
+	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(SourceFile:150) ~[l$a.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188177_a(SourceFile:455) ~[rc.class:?]
+	at net.minecraft.advancements.Advancement$Builder.func_192059_a(SourceFile:203) ~[i$a.class:?]
+	at net.minecraft.advancements.AdvancementManager$1.deserialize(AdvancementManager.java:50) ~[ns$1.class:?]
+	at net.minecraft.advancements.AdvancementManager$1.deserialize(AdvancementManager.java:46) ~[ns$1.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at net.minecraft.util.JsonUtils.func_188173_a(SourceFile:492) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_193839_a(SourceFile:532) ~[rc.class:?]
+	at net.minecraft.advancements.AdvancementManager.func_192777_a(AdvancementManager.java:184) [ns.class:?]
+	at net.minecraft.advancements.AdvancementManager.func_192779_a(AdvancementManager.java:68) [ns.class:?]
+	at net.minecraft.advancements.AdvancementManager.<init>(AdvancementManager.java:60) [ns.class:?]
+	at net.minecraft.world.WorldServer.func_175643_b(WorldServer.java:156) [oo.class:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:298) [MinecraftServer.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:270) [nz.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:484) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_151]
+[18:31:13] [Server thread/ERROR]: Parsing error loading built-in advancement minecraft:recipes/decorations/end_crystal
+com.google.gson.JsonSyntaxException: Unknown recipe 'minecraft:end_crystal'
+	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(SourceFile:166) ~[l$a.class:?]
+	at net.minecraft.advancements.AdvancementRewards$Deserializer.deserialize(SourceFile:150) ~[l$a.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:887) ~[Gson.class:?]
+	at com.google.gson.Gson.fromJson(Gson.java:952) ~[Gson.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl.deserialize(TreeTypeAdapter.java:162) ~[TreeTypeAdapter$GsonContextImpl.class:?]
+	at net.minecraft.util.JsonUtils.func_188179_a(SourceFile:439) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_188177_a(SourceFile:455) ~[rc.class:?]
+	at net.minecraft.advancements.Advancement$Builder.func_192059_a(SourceFile:203) ~[i$a.class:?]
+	at net.minecraft.advancements.AdvancementManager$1.deserialize(AdvancementManager.java:50) ~[ns$1.class:?]
+	at net.minecraft.advancements.AdvancementManager$1.deserialize(AdvancementManager.java:46) ~[ns$1.class:?]
+	at com.google.gson.internal.bind.TreeTypeAdapter.read(TreeTypeAdapter.java:69) ~[TreeTypeAdapter.class:?]
+	at net.minecraft.util.JsonUtils.func_188173_a(SourceFile:492) ~[rc.class:?]
+	at net.minecraft.util.JsonUtils.func_193839_a(SourceFile:532) ~[rc.class:?]
+	at net.minecraft.advancements.AdvancementManager.func_192777_a(AdvancementManager.java:184) [ns.class:?]
+	at net.minecraft.advancements.AdvancementManager.func_192779_a(AdvancementManager.java:68) [ns.class:?]
+	at net.minecraft.advancements.AdvancementManager.<init>(AdvancementManager.java:60) [ns.class:?]
+	at net.minecraft.world.WorldServer.func_175643_b(WorldServer.java:156) [oo.class:?]
+	at net.minecraft.server.MinecraftServer.func_71247_a(MinecraftServer.java:298) [MinecraftServer.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:270) [nz.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:484) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_151]
+[18:31:14] [Server thread/INFO]: Loaded 888 advancements
+[18:31:14] [Server thread/INFO]: Preparing start region for level 0
+[18:31:14] [Server thread/INFO]: Done (4.469s)! For help, type "help" or "?"
+[18:31:41] [User Authenticator #1/INFO]: UUID of player Photonik is 911478a3-f0ac-4f12-89d7-5d55515492bf
+[18:31:45] [Server thread/INFO]: Photonik[/10.0.0.1:36817] logged in with entity id 132 at (1.4616795239438711, 65.0, 0.48510670287505075)
+[18:31:45] [Server thread/INFO]: Photonik joined the game
+[18:31:45] [Server thread/INFO]: [Server] Welcome back, Photonik
+[18:31:45] [Server thread/INFO]: You whisper to Photonik: Hey there, Photonik!
+[18:31:45] [Server thread/INFO]: You whisper to Photonik: Welcome to lostphotons
+[18:32:15] [User Authenticator #2/INFO]: UUID of player _Wooly is e476f101-60d1-4741-96dc-72f47e9f3f30
+[18:32:24] [Server thread/INFO]: _Wooly[/99.236.111.135:49754] logged in with entity id 201 at (2.925917586047047, 65.0, -0.5383822410705594)
+[18:32:24] [Server thread/INFO]: _Wooly joined the game
+[18:32:24] [Server thread/INFO]: [Server] Welcome back, _Wooly
+[18:32:24] [Server thread/INFO]: You whisper to _Wooly: Hey there, _Wooly!
+[18:32:24] [Server thread/INFO]: You whisper to _Wooly: Welcome to lostphotons
+[18:32:46] [Server thread/INFO]: <Photonik> yay! join your island :D
+[18:33:05] [Server thread/INFO]: <_Wooly> alright!
+[18:33:22] [Server thread/INFO]: <_Wooly> I've never done a skyblock before lmao
+[18:33:36] [Server thread/INFO]: <Photonik> well this one is pretty cool I think :P
+[18:34:15] [Server thread/INFO]: <Photonik> Ill have a quest book eventually but 1.12.2 is alwaysssss updating so theres still a lot of mods we could possibly add in the future
+[18:34:24] [Server thread/INFO]: <_Wooly> okay
+[18:34:59] [Server thread/INFO]: _Wooly has made the advancement [Stone Age]
+[18:35:15] [Server thread/INFO]: <_Wooly> is there veinminer
+[18:35:20] [Server thread/INFO]: <Photonik> oh yeah
+[18:35:45] [Server thread/INFO]: <Photonik> gotta have something in your hand to vein mine
+[18:41:00] [Server thread/INFO]: There are 2/50 players online:
+[18:41:00] [Server thread/INFO]: Photonik, _Wooly
+[18:41:13] [Server thread/INFO]: <_Wooly> what do i do im so confused
+[18:41:33] [Server thread/INFO]: <Photonik> okay so those seeds
+[18:41:36] [Server thread/INFO]: <_Wooly> yep
+[18:42:10] [Server thread/INFO]: <_Wooly> LOL IM SMART
+[18:42:16] [Server thread/INFO]: <Photonik> :P
+[18:42:23] [Server thread/INFO]: <_Wooly> haha thank you
+[18:42:27] [Server thread/INFO]: <Photonik> np np
+[18:42:55] [Server thread/INFO]: <Photonik> that water will keep your dirt wet from below in 1.12.2
+[18:43:48] [Server thread/INFO]: <Photonik> progression is essence>mobfarm>philosophers stone
+[18:43:55] [Server thread/INFO]: <_Wooly> got it
+[18:44:01] [Server thread/INFO]: <Photonik> have fun :D
+[18:44:54] [Server thread/INFO]: <Photonik> picked that up somehow
+[18:47:22] [Server thread/INFO]: <Photonik> dont forget to do /sethome
+[18:47:34] [Server thread/INFO]: <_Wooly> nice
+[18:50:00] [Server thread/INFO]: <_Wooly> do they not grow at night?
+[18:50:24] [Server thread/INFO]: <Photonik> probably not lol
+[18:50:38] [Server thread/INFO]: <Photonik> I could probably create a celestial manipulator
+[18:50:55] [Server thread/INFO]: <Photonik> ....iffff I killed the dragon :P
+[18:53:01] [Server thread/INFO]: <Photonik> gonna be afk for a few minutes I need to upload stuff to github
+[18:53:04] [Server thread/INFO]: <_Wooly> okay

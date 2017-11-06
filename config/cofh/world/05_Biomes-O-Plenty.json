@@ -1,0 +1,185 @@
+{
+  "populate": {
+    "amethyst": {
+      "distribution": "uniform",
+      "generator": {
+        "block": "biomesoplenty:gemore",
+        "material": "stone",
+        "cluster-size": 1
+      },
+      "cluster-count": 1,
+      "min-height": 20,
+      "max-height": 70,
+      "retrogen": false,
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "ruby": {
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "biomesoplenty:gemore",
+          "metadata": 1
+        },
+        "material": "stone",
+        "cluster-size": 8
+      },
+      "cluster-count": 7,
+      "min-height": 20,
+      "max-height": 70,
+      "retrogen": false,
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "peridot": {
+      "distribution": "uniform",
+      "generator": {
+        "block":   {
+            "name": "biomesoplenty:gemore",
+            "metadata": 2
+        },
+        "material": "stone",
+        "cluster-size": 0
+      },
+      "cluster-count": 0,
+      "min-height": 20,
+      "max-height": 70,
+      "retrogen": false,
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "topaz": {
+      "distribution": "uniform",
+      "generator": {
+        "block":   {
+            "name": "biomesoplenty:gemore",
+            "metadata": 3
+        },
+        "material": "stone",
+        "cluster-size": 0
+      },
+      "cluster-count": 0,
+      "min-height": 20,
+      "max-height": 70,
+      "retrogen": false,
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "tanzanite": {
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "biomesoplenty:gemore",
+          "metadata": 4
+        },
+        "material": "stone",
+        "cluster-size": 0
+      },
+      "cluster-count": 0,
+      "min-height": 20,
+      "max-height": 70,
+      "retrogen": false,
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "malachite": {
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "biomesoplenty:gemore",
+          "metadata": 5
+        },
+        "material": "stone",
+        "cluster-size": 0
+      },
+      "cluster-count": 0,
+      "min-height": 20,
+      "max-height": 70,
+      "retrogen": false,
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "sapphire": {
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "biomesoplenty:gemore",
+          "metadata": 6
+        },
+        "material": "stone",
+        "cluster-size": 0
+      },
+      "cluster-count": 0,
+      "min-height": 20,
+      "max-height": 70,
+      "retrogen": false,
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    },
+    "amber": {
+      "distribution": "uniform",
+      "generator": {
+        "block": {
+          "name": "biomesoplenty:gemore",
+          "metadata": 7
+        },
+        "material": "stone",
+        "cluster-size": 0
+      },
+      "cluster-count": 0,
+      "min-height": 20,
+      "max-height": 70,
+      "retrogen": false,
+      "biome": "all",
+      "dimension": {
+        "restriction": "blacklist",
+        "value": [
+          -1,
+          1
+        ]
+      }
+    }
+  }
+}
